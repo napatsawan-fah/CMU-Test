@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<title> Read Data from Database </title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Dosis:400,700"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <link href="script.js" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class = "page-header">
+       
+      </div>
+      <div class="float-left">
+        <a href="add-employees.html" class="btn btn-success" role="button">Add New Employee</a>
+      </br>
+      </div>
+      
+      <table class="table table-striped">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Birthdate</th>
+        <th>Email</th>
+        <th>Operation</th>
+      </tr>
+     
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		
+			
+			<td>
+		
+			<a href="input_update_dept.php?id=<?= $id ?>" class="btn btn-info" role="button">Update</a>
+			<a href="delete_dept.php?id=<?= $id ?>" class="btn btn-info" role="button" onClick=" Delete () ">Delete</a>
+			</td>
+
+		</tr>
+
+      <script> 
+        function Delete ()  {
+         return confirm('Delete this department?')	 
+        }
+       </script>
+       
+    </div>
+    </body>
+    </html>
